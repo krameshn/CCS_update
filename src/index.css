@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  html {
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(135deg, #030712 0%, #111827 50%, #030712 100%);
+    min-height: 100vh;
+  }
+
+  p, span, li {
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02em;
+  }
+}
+.mrg0T{margin-top: 0!important;}
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-400 to-brand-500 bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-brand-500 to-brand-600 text-white rounded-lg hover:from-brand-600 hover:to-brand-700 transition-all font-medium;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border border-dark-600 text-dark-100 rounded-lg hover:border-brand-400/50 hover:bg-dark-900 transition-all font-medium;
+  }
+
+  .card-dark {
+    @apply bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 rounded-lg hover:border-brand-500/50 transition-all;
+  }
+
+  .section-title {
+    @apply text-5xl lg:text-6xl font-bold text-white;
+  }
+
+  .section-subtitle {
+    @apply text-xl text-dark-300 leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
+  }
+
+  .glow-brand {
+    box-shadow: 0 0 30px rgba(14, 165, 233, 0.3);
+  }
+}
+
+  /* --- WOW / fadeInUp animation utilities --- */
+  .wow {
+    visibility: visible;
+  }
+
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  .fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+  }
+
+  .wow.fadeInUp {
+    animation-delay: 0.2s;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 20px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  /* small helper to quickly apply an easeOut motion */
+  .fadeInUp.slow {
+    animation-duration: 1.2s;
+  }
+
+
+.max-w-5xl {
+  max-width: 80rem; /* 1024px */
+}
+.max-w-4xl {
+  max-width: 80rem; /* 1024px */
+} 
+.logo {height: 70px;}
+.m_logo {height: 160px;}
+.fadeInUp{visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;}
