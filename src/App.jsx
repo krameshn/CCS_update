@@ -84,7 +84,13 @@ function App() {
       {!path.startsWith('/company') && path !== '/contact' ? (
         <>
           {/* Hero Section */}
-          <section id="home" className="pt-40 pb-48 px-6 lg:px-12 relative overflow-hidden">
+         
+          <section id="home" className="pt-40 pb-48 px-6 wavebody wow fadeInUp lg:px-12 relative overflow-hidden">
+   <div> 
+     <div className="wave"></div>
+     <div className="wave"></div>
+     <div className="wave"></div>
+  </div>
             <div className="absolute inset-0 opacity-20">
               <div className="absolute top-20 right-0 w-96 h-96 bg-brand-500 rounded-full blur-3xl"></div>
               <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-brand-600 rounded-full blur-3xl"></div>
@@ -123,7 +129,7 @@ function App() {
 
           {/* Stats Section */}
           <section className="py-32 px-6 wow fadeInUp lg:px-12 border-y border-dark-800">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto wow fadeInUp">
               <div className="grid md:grid-cols-4 gap-16 text-center">
                 <div>
                   <div className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-brand-400 to-brand-500 bg-clip-text text-transparent mb-4">500+</div>
