@@ -149,7 +149,7 @@
     border-radius: 1000% 1000% 0 0;
     position: absolute;
     width: 200%;
-    height: 12em;
+    height: 9em;
     animation: wave 10s -3s linear infinite;
     transform: translate3d(0, 0, 0);
     opacity: 0.2;
@@ -190,4 +190,5 @@
     100% {
         transform: translateX(1);
     }
+
 }
