@@ -1,6 +1,15 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import Navigation from './Navigation';
+import profilePhoto from './assets/images/profile_photo.png';
+import linkedin from './assets/images/linkedin.png';
+import ccslogo from './assets/images/ccs_logo.png';
+import isblogo from './assets/images/isb_logo.png';
+import kyndryllogo from './assets/images/kyndryl_logo.png';
+import ibmlogo from './assets/images/ibm_logo.png';
+import hplogo from './assets/images/hp_logo.png';
+import londonbusinessschoollogo from './assets/images/london_business_school_logo.png';
+import whartonlogo from './assets/images/wharton_logo.png';
 
 export default function CompanyAbout({ activeSection, onNavigate, onScrollToSection }) {
   return (
@@ -14,12 +23,12 @@ export default function CompanyAbout({ activeSection, onNavigate, onScrollToSect
       <div className="max-w-5xl mx-auto py-24 px-6 lg:px-12 mt-6 wow fadeInUp">
  
  <div class="header-section">
-        <div><div className='txt12'><img src="/src/assets/images/linkedin.png" align="absmiddle" /><a href='www.linkedin.com/in.porikasrikanth' target='_blank'>www.linkedin.com/in.porikasrikanth</a></div>
-            <img src="/src/assets/images/profile_photo.png" alt="Profile Photo" className="profile-img" />
+        <div><div className='txt12'><img src={linkedin} align="absmiddle" /><a href='www.linkedin.com/in.porikasrikanth' target='_blank'>www.linkedin.com/in.porikasrikanth</a></div>
+            <img src={profilePhoto} alt="Profile Photo" className="profile-img" />
         </div>
 
         <div className="text-dark-300 mb-6">
-         <div className='right'><img src="/src/assets/images/isb_logo.png" align="absmiddle" /></div>
+         <div className='right'><img src={isblogo} align="absmiddle" /></div>
            <h1 className="text-4xl font-bold text-white mb-6">About me</h1>
 
             <p><strong>Srikant Porika</strong>, Founder & CEO of Cerrado Consulting Services, an AI product, services and technology company.
@@ -50,12 +59,12 @@ export default function CompanyAbout({ activeSection, onNavigate, onScrollToSect
     </div>
 
     <div class="logos mt-2">
-        <img src="/src/assets/images/ccs_logo.png" alt="Cerrado Consulting Services" />
-        <img src="/src/assets/images/kyndryl_logo.png" alt="Kyndryl" />
-        <img src="/src/assets/images/ibm_logo.png" alt="IBM" />
-        <img src="/src/assets/images/hp_logo.png" alt="HP" />
-        <img src="/src/assets/images/london_business_school_logo.png" alt="London Business School"/>
-        <img src="/src/assets/images/wharton_logo.png" alt="Wharton"/>
+        <img src={ccslogo}  alt="Cerrado Consulting Services" />
+        <img src={kyndryllogo}  alt="Kyndryl" />
+        <img src={ibmlogo}  alt="IBM" />
+        <img src={hplogo}  alt="HP" />
+        <img src={londonbusinessschoollogo}  alt="London Business School"/>
+        <img src={whartonlogo}  alt="Wharton"/>
     </div>
       </div>
     </div>
