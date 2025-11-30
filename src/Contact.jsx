@@ -63,7 +63,7 @@ export default function Contact({ activeSection, onNavigate, onScrollToSection }
           <div className="bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 rounded-lg p-8">
             <h2 className="text-2xl font-semibold text-white mb-4">Contact Details</h2>
             <p className="text-dark-300 mb-6">Sales & Partnerships</p>
-            <p className="text-dark-300 mb-2">Email: <a className="text-brand-300">sales@cerrado.ai</a></p>
+            <p className="text-dark-300 mb-2">Email: <a className="text-brand-300">admin@cerredoconsulting.com</a></p>
             <p className="text-dark-300 mb-6">Phone: <span className="text-dark-300">+91 8886564445</span></p>
 
             <h3 className="text-lg font-semibold text-white mt-6 mb-3">Company Registry</h3>
@@ -216,3 +216,4 @@ Nallagandla,<br/>Hyderabad</p>
     </div>
   );
 }
+
