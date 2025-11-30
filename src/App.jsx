@@ -456,7 +456,7 @@ function App() {
       <footer className="py-20 px-6 lg:px-12 bg-dark-900 border-t border-dark-800">
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-2xl font-bold bg-gradient-to-r from-brand-400 to-brand-500 bg-clip-text text-transparent mb-4">
-            Cerrado
+              Cerrado Consulting Services
           </div>
           <p className="text-dark-300 mb-8">
             AI-First Enterprise Transformation

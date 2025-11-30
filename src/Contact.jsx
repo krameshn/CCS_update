@@ -66,11 +66,11 @@ export default function Contact({ activeSection, onNavigate, onScrollToSection }
             <p className="text-dark-300 mb-2">Email: <a className="text-brand-300">sales@cerrado.ai</a></p>
             <p className="text-dark-300 mb-6">Phone: <span className="text-dark-300">+91 8886564445</span></p>
 
-            <h3 className="text-lg font-semibold text-white mt-6 mb-3">Headquarters</h3>
-            <p className="text-dark-300">Hno 1-100/de/01,<br/>
-Balaji meadows apartment,<br/>
+            <h3 className="text-lg font-semibold text-white mt-6 mb-3">Company Registry</h3>
+            <p className="text-dark-300">
+Balaji meadows,<br/>
 Diamond heights,<br/>
-Nallagandla</p>
+Nallagandla,<br/>Hyderabad</p>
 
             <div className="mt-8">
               <a href="#" className="inline-flex items-center gap-2 text-brand-300 font-medium">

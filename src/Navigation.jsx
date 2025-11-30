@@ -41,7 +41,7 @@ export default function Navigation({ activeSection, onNavigate, onScrollToSectio
                 <img
                   src={ccsLogo}
                   alt="Cerrado Consulting Services"
-                  className="logo object-contain ml-2 wow fadeInUp"
+                  className="logo object-contain ml-2 wow fadeInUp" 
                 />
           </div>
 
@@ -58,6 +58,25 @@ export default function Navigation({ activeSection, onNavigate, onScrollToSectio
             >
               Products
             </button>
+           <button
+              onClick={() => handleNavClick('scroll', 'consulting')}
+              className={`text-sm font-medium transition-colors ${activeSection === 'consulting' ? 'text-white border-b-2 border-brand-400 pb-1' : 'text-dark-300 hover:text-brand-400'}`}
+            >
+              Consulting
+            </button>
+            
+            <button
+              onClick={() => handleNavClick('scroll', 'managed-services')}
+              className={`text-sm font-medium transition-colors ${activeSection === 'managed-services' ? 'text-white border-b-2 border-brand-400 pb-1' : 'text-dark-300 hover:text-brand-400'}`}
+            >
+              Services
+            </button>
+            <button
+              onClick={() => handleNavClick('scroll', 'why-us')}
+              className={`text-sm font-medium transition-colors ${activeSection === 'why-us' ? 'text-white border-b-2 border-brand-400 pb-1' : 'text-dark-300 hover:text-brand-400'}`}
+            >
+              Why Choose Us
+            </button>
             {/* Company dropdown */}
             <div className="relative group">
               <button
@@ -71,24 +90,7 @@ export default function Navigation({ activeSection, onNavigate, onScrollToSectio
                 <button onClick={() => handleNavClick('navigate', '/company/news')} className="block w-full text-left px-4 py-2 text-sm text-dark-100 hover:bg-dark-800">News</button>
               </div>
             </div>
-            <button
-              onClick={() => handleNavClick('scroll', 'consulting')}
-              className={`text-sm font-medium transition-colors ${activeSection === 'consulting' ? 'text-white border-b-2 border-brand-400 pb-1' : 'text-dark-300 hover:text-brand-400'}`}
-            >
-              Consulting
-            </button>
-            <button
-              onClick={() => handleNavClick('scroll', 'managed-services')}
-              className={`text-sm font-medium transition-colors ${activeSection === 'managed-services' ? 'text-white border-b-2 border-brand-400 pb-1' : 'text-dark-300 hover:text-brand-400'}`}
-            >
-              Services
-            </button>
-            <button
-              onClick={() => handleNavClick('scroll', 'why-us')}
-              className={`text-sm font-medium transition-colors ${activeSection === 'why-us' ? 'text-white border-b-2 border-brand-400 pb-1' : 'text-dark-300 hover:text-brand-400'}`}
-            >
-              Why Choose Us
-            </button>
+        
             <button
               onClick={() => handleNavClick('navigate', '/contact')}
               className="px-6 py-2.5 bg-gradient-to-r from-brand-500 to-brand-600 text-white rounded-lg hover:from-brand-600 hover:to-brand-700 transition-all text-sm font-medium"
